@@ -1,0 +1,64 @@
+<!-- Login Page-->
+
+<!DOCTYPE html>
+<html lang="">
+<!-- Here We Go !! -->
+<head>
+<title>ANSNARA Evaluation Systems</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">   <!-- For phone Fucntionalities and support -->
+<link href="admin.css" rel="stylesheet" type="text/css" media="all">
+<!-- connected the css file -->
+
+</head>
+<body id="top">
+
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ---------------------------------------------------------------- -->
+    <div class="fl_left">
+      <ul class="nospace">
+        <li><i class="fa fa-home"></i> ANSNARA Evaluation Sytems</li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul class="nospace">
+        <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="signup.html">Register</a></li>
+		<li><a href="Login.html">Login</a></li>
+		<li><a href="result.jsp">Results</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------------------------------------------------- -->
+
+    <!-- Starting the main COde -->
+<p class="text" >Add New Question ! </p>
+ <form action="add_question.jsp" method="get">
+
+
+<!--Adding the Question-->
+	<center>
+    <input type="text" id="que" align="center" name="que" placeholder="Enter a new Question...">
+        <input type="text" id="no" align="center" name="no" placeholder="Enter Question No. ...">
+        <input type="text" id="op1" align="center" name="op1" placeholder="Enter Option A...">
+        <input type="text" id="op2" align="center" name="op2" placeholder="Enter Option B...">
+        <input type="text" id="op3" align="center" name="op3" placeholder="Enter Option C...">
+        <input type="text" id="op4" align="center" name="op4" placeholder="Enter Option D...">
+    <input type="text" id="ans" align="center" name="ans" placeholder="Enter The Answer">
+	<input type="submit" name="add_question" value="Add Question"></center>
+
+    <!-- / main body -->
+
+<!-- ---------------------------------------------------------------- -->
+
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="layout/scripts/jquery.flexslider-min.js"></script>
+</body>
+</html>

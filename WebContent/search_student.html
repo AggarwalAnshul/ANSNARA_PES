@@ -1,0 +1,121 @@
+<!-- Login Page-->
+
+<!DOCTYPE html>
+<html lang="en" style:height="100%">
+<!-- Here We Go !! -->
+
+<head>
+<title>ANSNARA Evaluation Systems</title>
+<meta charset="utf-8">
+<meta name="viewport" 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- For phone Functionalities and support -->
+<link href="layout/styles/search.css" rel="stylesheet" type="text/css" 	media="all">
+<!-- connected the css file -->
+
+<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: right;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not (.active ) {
+	background-color: #4CAF50;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+</style>
+
+</head>
+<body bgcolor="white">
+
+
+	<!-- ---------------------------------------------------------------- -->
+	<ul>
+		<li style="float: left"><a href="index.html">ANSNARA
+				Evaluation System</a></li>
+		<li><a href="company_index.html">Company</a></li>
+		<li><a href="admin_login.html">Admin</a></li>
+		<li><a href="signup.html">Register</a></li>
+		<li><a class="active" href="Login.html">Login</a></li>
+		<li><a href="index.html">About</a></li>
+	</ul>
+
+
+	<!-- -----------------------Page Heading------------------------------- -->
+
+
+	<!-- Starting the main COde -->
+	<p class="heading"> Search Students </p>
+	
+	<!-- ------------------------Background Image------------------------------------------- -->
+
+	<div class="bgded overlay" style="background-image: url('images/demo/backgrounds/search.png')">
+	<br><br>
+	
+	<!-- ------------------------------------------------------------- -->
+	
+	<center>
+	<table><col width="500"><col width="80">
+	<!--  Select By Email ID -->
+   <form action="search_email.jsp" method="get">
+	<tr>
+	 <td><label for="search_email" class="search">Search By Email ID</label></td>
+	</tr>
+	<tr>
+	 <td><input type="email" id="search_email" align="center" name="search_email" Placeholder="Enter Email ID..." required></td>
+	 <td><a class="btn" href="search_email.jsp">GO</a></td>
+   </tr>
+</form>
+
+	<!--  Select By Topic -->
+<form action="search_topic.jsp" method="get">
+	<tr>
+	     <td><label for="search_topic" class="search">Search By Topic</label></td>
+   </tr> 
+    <tr>
+         <td><select id="search_topic" name="search_topic"  style:margin="0 0 0 10px" required>
+			<option value="null">Select Topic</option>
+			<option value="java">JAVA</option>
+			<option value="cplus">C++</option>
+		    </select>
+	    </td>	    
+	     <td> <input type="submit"  value="Go..."  Placeholder="Go..."> </td>
+  </tr>
+</form>
+</table></center>
+	<!--  Select all -->
+	
+  
+  <center> <a class="btn" href="search_all.jsp" >Show All</a>  </center>  
+  
+
+	<br><br>
+	</div>
+	<!-- / main body -->
+
+	<!-- ---------------------------------------------------------------- -->
+
+	<!-- JAVASCRIPTS -->
+	<script src="layout/scripts/jquery.min.js"></script>
+	<script src="layout/scripts/jquery.backtotop.js"></script>
+	<script src="layout/scripts/jquery.mobilemenu.js"></script>
+	<script src="layout/scripts/jquery.flexslider-min.js"></script>
+</body>
+</html>

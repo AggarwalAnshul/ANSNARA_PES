@@ -1,0 +1,105 @@
+
+@import url("font-awesome.min.css");
+@import url("custom.flexslider.css");
+@import url("framework.css");
+
+
+.result{color: black;
+		font-size: x-large;}
+		
+.text{color: black;
+	  font-size: xx-large;
+}
+
+
+.delete{color: black;
+	  font-size:x-large;
+}
+
+
+.btn {
+   background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color:white
+}
+
+
+.btn:hover {
+   background-color: blue;
+    border: 1px solid blue;
+    color:white
+}
+
+
+input[type=submit] {
+    width: 40%;
+    background-color: transparent;
+    color: black;
+    padding: 14px 20px;
+	margin: 25px 20px;
+	border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding:s 14px 20px;
+    border: none;
+	margin: 25px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text]{
+    width: 40%;
+	color: black;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	
+    box-sizing: border-box;
+}
+
+
+input[type=email]{
+    width: 40%;
+	color: black;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	
+    box-sizing: border-box;
+}
+
+
+input[type=numbers]{
+    width: 40%;
+	color: black;
+	text-align:center;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	
+    box-sizing: border-box;
+}
+
+input[type=password]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+	color: black;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

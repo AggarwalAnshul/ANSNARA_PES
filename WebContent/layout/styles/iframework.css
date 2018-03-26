@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* For the Input Fields  */
+/*  ----------------------------------------------------------------------------------------- */
+.result{color: black;
+		font-size: x-large;}
+		
+.text{color: black;
+	  font-size: xx-large;
+}
+
+
+input[type=submit] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+	margin: 25px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text]{
+    width: 40%;
+	color: black;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	
+    box-sizing: border-box;
+}
+
+
+input[type=email]{
+    width: 40%;
+	color: black;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	
+    box-sizing: border-box;
+}
+
+
+input[type=password]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+	color: black;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/*------------------------------------------------------------------------------- */
+
+
+
+
+
+/* This clips the extra part if the text or other elements exceeds the area limits*/
+html{overflow-y:scroll; overflow-x:hidden;}
+html, body{margin:0; padding:0; font-size:14px; line-height:1.6em;}   /*the em is the browsers default text size is none specified*/
+
+
+/*The width and height properties (and min/max properties) includes content, padding and border, but not the margin*/
+*, *::before, *::after{box-sizing:border-box;}  /*the :: is the prefix that includes the contet before or after the tag*/
+
+
+/* to be used in the future pages to come*/
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.uppercase{text-transform:uppercase;}
+.capitalise{text-transform:capitalize;}
+.hidden{display:none;}
+.nospace{margin:0; padding:0; list-style:none;}
+.block{display:block;}
+.justified{text-align:justify;}
+.inline *{display:inline-block;}
+.inline *:last-child{margin-right:0;}
+.pushright li{margin-right:20px;}
+.pushright li:last-child{margin-right:0;}
+.borderedbox{border:1px solid;}
+.overlay{position:relative; z-index:1;}
+.overlay::after{display:block; position:absolute; top:0; left:0; width:100%; height:100%; content:""; z-index:-1;}
+.bgded{background-position:top center; background-repeat:no-repeat; background-size:cover; opacity:0.1;}
+.bgded:hover{opacity:1;}
+.circle, .icon{border-radius:50%; background-clip:padding-box;}
+
+
+/*the inline tag displays the covred entitty into a single line >>  (..) in placce of vertical( : )  */
+.btn{display:inline-block; padding:8px 18px 10px; text-transform:uppercase; border:1px solid;}
+
+/*relative postion aligns the text with the margin relative to tbe original positiion*/
+/*x index set the 3d backwads forward efect*/
+/*the top tag specifies the gap betweent this entitiy and the absolutely placed entitiy*/
+blockquote{display:block; position:relative; width:100%; margin:0; padding:20px 0 0 20px; line-height:1.4; z-index:1;}
+blockquote::before{display:block; position:absolute; top:0; left:0; font-family:"FontAwesome"; font-size:60px; line-height:60px; content:"\f10d"; z-index:-1;}
+
+
+.icon{display:inline-block; width:80px; height:80px; line-height:78px; border:1px solid; text-align:center; font-size:32px;}
+
+.clear, .group{display:block;}
+.clear::before, .clear::after, .group::before, .group::after{display:table; content:"";}
+.clear, .clear::after, .group, .group::after{clear:both;}  /*this ser teh alignment of the texr. On the clear tag---> the text is plced below left or right floating image*/
+
+a{outline:none; text-decoration:none;}
+
+
+/*sets the position of the image be it right or left*/
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+
+
+img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.imgl{margin:0 15px 10px 0; clear:left;}
+.imgr{margin:0 0 10px 15px; clear:right;}
+
+
+/* Fonts
+--------------------------------------------------------------------------------------------------------------- */
+body, input, textarea, select{font-family:Verdana, Geneva, sans-serif;}
+h1, h2, h3, h4, h5, h6, .heading{font-family:Georgia, "Times New Roman", Times, serif;}
+
+
+/* Forms
+--------------------------------------------------------------------------------------------------------------- */
+/*the label tag for the radio buttons*/
+/*fieldset and legend contains the box stle for input elements*/
+/*display none removes the text from the screen, other mode:hidden --> this creates a big void gap*/
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+label, input, textarea, select, button{display:block; resize:none; outline:none; color:inherit; font-size:inherit; font-family:inherit; vertical-align:middle;}
+label{margin-bottom:5px;}
+
+:required, :invalid{ box-shadow:none;}
+/*the required mandatory field*/
+/*the default is a border and some fucking shadow*/
+
+
+/* Generalise
+/* top right bottom left
+--------------------------------------------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6, .heading{margin:0 0 20px 0; font-size:22px; line-height:normal; font-weight:normal; text-transform:capitalize;}
+
+address{font-style:normal; font-weight:normal;}
+hr{display:block; width:100%; height:1px; border:solid; border-width:1px 0 0 0;}
+
+/*root element font size*/
+.font-xs{font-size:.8rem;}
+.font-x1{font-size:1.2rem;}
+.font-x2{font-size:1.8rem;}
+.font-x3{font-size:2.8rem;}
+
+/*if the existing word is bigeer in size the word transferred to the next line*/
+.wrapper{display:block; position:relative; width:100%; margin:0; padding:0; text-align:left; word-wrap:break-word;}
+
+/*
+ The Big Genereal Class*/
+.hoc{display:block; margin:0 auto;}
+
+
+/* HTML 5 Overrides
+--------------------------------------------------------------------------------------------------------------- */
+address, article, aside, figcaption, figure, footer, header, main, nav, section{display:block; margin:0; padding:0;}
+
+
+/* Grid
+-------------------------------------------------------------------------------------------------------------- */
+.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 3.06748466257669%; list-style:none;}
+
+.first{margin-left:0; clear:left;}
+
+/*for the images of the service field ( will include adminlogin - ssl encytption etc)*/
+.one_quarter{width:22.69938650306748%;}
+.one_third{width:31.28834355828221%;}
+.one_half, .two_quarter{width:48.46625766871166%;}
+.two_third{width:65.6441717791411%;}
+.three_quarter{width:74.23312883435584%;}
+
+
+/* Spacing
+--------------------------------------------------------------------------------------------------------------- */
+.btmspace-10{margin-bottom:10px;}
+.btmspace-15{margin-bottom:15px;}
+.btmspace-30{margin-bottom:30px;}
+.btmspace-50{margin-bottom:50px;}
+.btmspace-80{margin-bottom:80px;}
+
+.inspace-5{padding:5px;}
+.inspace-10{padding:10px;}
+.inspace-15{padding:15px;}
+.inspace-30{padding:30px;}
+.inspace-50{padding:50px;}

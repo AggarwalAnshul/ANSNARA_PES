@@ -1,0 +1,30 @@
+
+@import url("font-awesome.min.css");
+@import url("custom.flexslider.css");
+@import url("framework.css");
+
+
+.result{color: black;
+		font-size: x-large;}
+		
+.text{color: black;
+	  font-size: xx-large;
+	  text-align: center;
+}
+
+
+.btn {
+   background-color: transparent;
+    border: 1px solid #FFFFFF;
+    width:30%;
+    color:white;
+    border-radius: 30px;
+}
+
+
+.btn:hover {
+   background-color:  #37a7f1 ;
+    border: 1px solid  #37a7f1 ;
+    color:white;
+    border-radius: 30px;
+}

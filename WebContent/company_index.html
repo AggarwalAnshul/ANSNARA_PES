@@ -1,0 +1,103 @@
+<!-- Login Page-->
+
+<!DOCTYPE html>
+<html lang="en" >
+<!-- Here We Go !! -->
+
+<head>
+<title>ANSNARA Evaluation Systems</title>
+<meta charset="utf-8">
+<meta name="viewport" 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- For phone Functionalities and support -->
+<link href="layout/styles/search_company.css" rel="stylesheet" type="text/css" 	media="all">
+<!-- connected the css file -->
+
+<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: right;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not (.active ) {
+	background-color: #4CAF50;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+</style>
+
+</head>
+<body min-height="100%">
+
+
+	<!-- ---------------------------------------------------------------- -->
+	<ul>
+		<li style="float: left"><a href="index.html">ANSNARA
+				Evaluation System</a></li>
+		<li><a href="company_index.html">Company</a></li>
+		<li><a href="admin_login.html">Admin</a></li>
+		<li><a href="signup.html">Register</a></li>
+		<li><a class="active" href="Login.html">Login</a></li>
+		<li><a href="index.html">About</a></li>
+	</ul>
+
+
+	<!-- ---------------------------------------------------------------- -->
+
+
+	<!-- Starting the main COde -->
+<p class="text">Company Signup </p>
+
+<div  class="bgded overlay"  style="background-image: url('images/demo/backgrounds/building.jpg')">
+	
+ <form action="company_signup.jsp" method="get">
+ 
+ <center><br><br>
+    
+    <input type="text" id="cname" name="cname" placeholder="Company name.." required><br>
+    
+     <input type="password" id="password"  name="password" placeholder="Your Password..." required><br>
+
+	
+    <input type="password" id="c_password"  name="c_password" placeholder="Confirm Password..." required><br>
+	
+	<input type="text" id="address"  name="address" placeholder="Company Address..."  required><br>
+
+    <select id="type" name="type" required><br>
+    <option value=null>...Select Company Domain...</option>
+      <option value="so">Service Based</option>
+      <option value="po" >Product Based</option>
+    </select>
+        
+  <input type="submit" value="Lets Go !">
+<a class="btn" href="company_login.html">Existing User ?</a>
+
+  </center></form>
+</div>
+	<!-- / main body -->
+
+	<!-- ---------------------------------------------------------------- -->
+
+	<!-- JAVASCRIPTS -->
+	<script src="layout/scripts/jquery.min.js"></script>
+	<script src="layout/scripts/jquery.backtotop.js"></script>
+	<script src="layout/scripts/jquery.mobilemenu.js"></script>
+	<script src="layout/scripts/jquery.flexslider-min.js"></script>
+</body>
+</html>

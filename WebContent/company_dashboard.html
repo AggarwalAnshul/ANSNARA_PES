@@ -1,0 +1,145 @@
+<!-- Login Page-->
+
+<!DOCTYPE html>
+<html lang="en" >
+<!-- Here We Go !! -->
+
+<head>
+<title>ANSNARA Evaluation Systems</title>
+<meta charset="utf-8">
+<meta name="viewport" 	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- For phone Functionalities and support -->
+<link href="layout/styles/dashboard.css" rel="stylesheet" type="text/css" 	media="all">
+<!-- connected the css file -->
+
+<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: right;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not (.active ) {
+	background-color: #4CAF50;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+</style>
+
+</head>
+<body min-height="100%">
+
+
+	<!-- ---------------------------------------------------------------- -->
+	<ul>
+		<li style="float: left"><a href="index.html">ANSNARA
+				Evaluation System</a></li>
+		<li><a class="active" href="company_index.html">Company</a></li>
+		<li><a href="admin_login.html">Admin</a></li>
+		<li><a href="signup.html">Register</a></li>
+		<li><a  href="Login.html">Login</a></li>
+		<li><a href="index.html">About</a></li>
+	</ul>
+
+
+	<!-- ---------------------------------------------------------------- -->
+
+
+	<!-- Starting the main COde -->
+	
+<p class="text" >Welcome to the Dashboard ! </p>
+<div  class="bgded overlay"  style="background-image: url('images/demo/backgrounds/building.jpg')">
+ <form action="dashborad.jsp" method="get">
+ <br><br>
+ 
+ <center> 
+ <table><col width="500"><col width="500">
+ 
+ <tr><td>
+ 	<label for="qualification" class="dashboard">Qualification</label>
+    <select id="qualification" name="qualification" required>
+    <option value=null>...Select Qualification...</option>
+      <option value="b.tech">B.Tech</option>
+      <option value="bca">BCA</option>
+      <option value="mca">MCA</option>
+      <option value="np">No Preferences</option>
+    </select>
+ </td>
+ <td>
+  <label for="subject" class="dashboard">Subject</label>
+    <select id="subject" name="subject" required>
+		<option value="null">...select Subject Type...</option>
+		<option value="np">No Preferences</option>  
+    	<option value="java">JAVA</option>
+      	<option value="c++">C++</option>
+    </select>
+ </td></tr>
+ 
+ <tr><td>
+ <label for="passout" class="dashboard">Passouts</label>
+      <select id="passout" name="passout" required>
+    <option value=null>...Select Passout Year...</option>
+      <option value="2014-2015">2014-2015</option>
+      <option value="2015-2016">2015-2016</option>
+      <option value="2016-2017">2016-2017</option>
+      <option value="2017-2018">2017-2018</option>
+      <option value="2018-2019">2018-2019</option>
+      <option value="2019-2020">2019-2020</option>
+      <option value="2020-2021">2020-2021</option>
+      <option value="np" >No Preferences</option>
+    </select>
+    </td>
+    
+    
+    
+    <td>
+    <label for="grades" class="dashboard">Grades</label>
+    <select id="grades" name="grades" required>
+    <option value=null>...Select Grades...</option>
+      <option value="90-100">>90%</option>
+      <option value="80-90">80-90%</option>
+      <option value="70-80">70-80%</option>
+      <option value="60-70">60-70%</option>
+      <option value="50-60">50-60%</option>
+        <option value="np" >No Preferences</option>
+    </select>
+ </td></tr>
+ </table>
+    
+    
+<label for="gender" class="dashboard">Gender</label> 
+    <select id="gender" name="gender" required>
+      <option value="...select Gender...">...Select Gender...</option>
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+      <option value="np">No Preference</option>
+    </select><br>
+	
+    <input type="submit" value="Submit" class="submit"><br>
+   
+    </center>
+  </form>
+</div>
+	<!-- / main body -->
+
+	<!-- ---------------------------------------------------------------- -->
+
+
+</body>
+</html>

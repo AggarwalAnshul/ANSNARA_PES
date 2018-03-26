@@ -1,0 +1,109 @@
+
+@import url("font-awesome.min.css");
+@import url("custom.flexslider.css");
+@import url("framework.css");
+
+table{table-layout: fixed;}
+
+
+
+
+.heading{font-size:xx-large;
+			color:black;
+			margin: 30px 0 0 0 ;
+         }
+
+		
+.text{color: black;
+	  font-size: xx-large;
+	 }
+
+.search{color: white;
+	  font-size:x-large;
+		}
+
+
+.btn {
+   background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color:white;
+    width:200px;
+    border-radius:5px;
+}
+
+
+.btn:hover {
+   background-color:  #37a7f1 ;
+    border: 1px solid  #37a7f1 ;
+    color:white;
+    width:200px;
+    border-radius:5px;
+}
+
+
+/*  *********************** show All Button ************************** */
+
+input[type=submit]{
+    width: 200px;
+    background-color: transparent;
+    color: white;
+	border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    width: 200px;
+    background-color:  #37a7f1 ;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text],select {
+    width: 500px;
+	color: black;
+    padding: 12px 20px;
+    margin: 0px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	
+    box-sizing: border-box;
+}
+
+
+input[type=email]{
+    width: 500px;
+	color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+input[type=numbers]{
+    width: 40%;
+	color: black;
+	text-align:center;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	
+    box-sizing: border-box;
+}
+
+input[type=password]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+	color: black;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

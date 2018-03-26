@@ -1,0 +1,145 @@
+<!-- Login Page-->
+
+<!DOCTYPE html>
+<html lang="">
+<!-- Here We Go !! -->
+<head>
+<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: right;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not (.active ) {
+	background-color: #4CAF50;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+</style>
+<title>ANSNARA Evaluation Systems</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- For phone Fucntionalities and support -->
+<link href="layout/styles/signup.css" rel="stylesheet" type="text/css"
+	media="all">
+<!-- connected the css file -->
+
+</head>
+<body id="top">
+
+
+
+	<!-- ---------------------------------------------------------------- -->
+	<ul>
+		<li style="float: left"><a href="index.html">ANSNARA
+				Evalution System</a></li>
+		<li><a href="company_index.html">Company</a></li>
+		<li><a href="admin_login.html">Admin</a></li>
+		<li><a class="active" href="signup.html">Register</a></li>
+		<li><a href="Login.html">Login</a></li>
+		<li><a href="index.html">About</a></li>
+	</ul>
+
+
+	<!-- ---------------------------------------------------------------- -->
+
+	<!-- Starting the main COde -->
+	<br>
+
+	<script type="text/javascript" language="JavaScript">
+		function checkPass(theForm) {
+			if (theForm.password.value != theForm.c_password.value) {
+				alert('Those Passwords don\'t match!');
+				return false;
+			} else {
+				return true;
+			}
+		}
+	</script>
+
+	<p class="text">Please Signup !</p>
+	<!-- <br><h2><Please Login !</h2><br> -->
+
+	<div class="bgded overlay"
+		style="background-image: url('images/demo/backgrounds/building.jpg')">
+		<form action="signup.jsp" onsubmit="return checkPass(this)"
+			method="get">
+
+			<br>
+			<br> <input type="text" id="username" name="username"
+				placeholder="First Name.." required> <input type="text"
+				id="lastname" name="lastname" placeholder="Last Name.." required>
+
+			<input type="password" id="password" name="password"
+				placeholder="Your Password..." required> <input
+				type="password" id="c_password" name="c_password"
+				placeholder="Confirm Password..." required> <input
+				type="text" id="phone" name="phone" placeholder="Contact No..."
+				maxlength="10" required> <input type="email" id="email"
+				name="email" placeholder="Your Email ID..." required>
+			 <select
+				id="qualification" name="qualification" required>
+				<option value=null disabled selected>...Select Qualification...</option>
+				<option value="b.tech">B.Tech</option>
+				<option value="bca">BCA</option>
+				<option value="mca">MCA</option>
+			</select> <select id="passout" name="passout" required>
+				<option value=null disabled selected>...Select Passout Year...</option>
+				<option value="2014-2015">2014-2015</option>
+				<option value="2015-2016">2015-2016</option>
+				<option value="2016-2017">2016-2017</option>
+				<option value="2017-2018">2017-2018</option>
+				<option value="2018-2019">2018-2019</option>
+				<option value="2019-2020">2019-2020</option>
+				<option value="2020-2021">2020-2021</option>
+			
+			</select> <select id="gender" placeholder="Select Gender" name="gender" required>
+				<option value="" disabled selected>...Select Gender...</option>
+				<option value="Female">Female</option>
+				<option value="Male">Male</option>
+			</select> <input type="text" id="city" name="city" placeholder="Your City...."
+				maxlength="40" required> <br>
+			<br>
+	</div>
+
+	<center>
+		<input type="submit" value="Submit" class="submit">
+	</center>
+	</form>
+	</div>
+	<!-- Ending the image div tag here  -->
+	<!-- Centering the login button tag here -->
+	<center>
+		<a class="btn" href="Login.html">Existing User ?</a>
+	</center>
+	<br />
+	<br />
+	<!-- / main body -->
+
+	<!-- ---------------------------------------------------------------- -->
+
+	<!-- JAVASCRIPTS -->
+	<script src="layout/scripts/jquery.min.js"></script>
+	<script src="layout/scripts/jquery.backtotop.js"></script>
+	<script src="layout/scripts/jquery.mobilemenu.js"></script>
+	<script src="layout/scripts/jquery.flexslider-min.js"></script>
+</body>
+</html>

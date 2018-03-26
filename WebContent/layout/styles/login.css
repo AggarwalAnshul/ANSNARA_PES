@@ -1,0 +1,147 @@
+
+@import url("font-awesome.min.css");
+@import url("custom.flexslider.css");
+@import url("framework.css");
+
+
+.result{color: black;
+		font-size: x-large;}
+		
+.text{color: black;
+	  font-size: xx-large;
+}
+
+
+.delete{color: black;
+	  font-size:x-large;
+}
+
+
+
+.search{color: white;
+	  font-size:x-large;
+}
+
+
+.btn {
+   background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color:white;
+    border-radius:5px;
+}
+
+
+.btn:hover {
+   background-color: #4CAF50;
+    border: 1px solid #4CAF50;
+    color:white;
+    border-radius:5px;
+}
+
+
+input[type=submit]{
+    width: 40%;
+    background-color: transparent;
+    color: white;
+    padding: 14px 20px;
+	margin: 25px 20px;
+	border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding:s 14px 20px;
+    border: none;
+	margin: 25px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text],select {
+    width: 40%;
+	color: black;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	
+    box-sizing: border-box;
+}
+
+
+input[type=email]{
+    width: 40%;
+	color: black;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	
+    box-sizing: border-box;
+}
+
+
+input[type=numbers]{
+    width: 40%;
+	color: black;
+	text-align:center;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	
+    box-sizing: border-box;
+}
+
+input[type=password]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+	color: black;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+font-family:"FontAwesome"; font-size:10px;
+
+
+/* Fonts
+--------------------------------------------------------------------------------------------------------------- */
+body, input, textarea, select {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+
+/* Tables
+--------------------------------------------------------------------------------------------------------------- */
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;
+				font-size:large;
+				color:black;}
+table, th{table-layout:auto;
+          }
+table{width:100%; margin-bottom:15px;}
+th, td{padding:5px 8px;}
+td{border-width:0 1px;}
+
+
+
+/* Tables + Comments */
+table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#D7D7D7;}
+#comments input:focus, #comments textarea:focus, #comments *:required:focus{border-color:#00ADEF;}
+
+th{color:#FFFFFF; background-color:#4CAF50;}
+
+tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
+tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
+table a, #comments a{background-color:inherit;}
+
